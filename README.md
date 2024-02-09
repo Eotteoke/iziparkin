@@ -17,7 +17,7 @@ The IZI PARKING Management System is a database project designed to efficiently 
 - CSS
 
 ## Entity Relationship Diagram (ERD)
-![alt text](https://github.com/boss10801/iziparkin/blob/main/IZI_Parking_ERD6.webp?raw=true)
+!ERD
 
 ## Permission Table
 | User Role | Table Column(s) | Permission |
@@ -39,6 +39,18 @@ The IZI PARKING Management System is a database project designed to efficiently 
 | | parking_lot_tb: parking_lot_id, parking_lot_owner_id, capacity, price_per_hour, price_per_day, location | SELECT, INSERT, UPDATE, DELETE |
 | | reservation_tb: reservation_id, customer_id, parking_lot_id, start_time, end_time, reservation_status | SELECT |
 | Staff | staff_tb: staff_id, staff_name, staff_email, staff_password, staff_phone, staff_address, staff_role | SELECT, INSERT, UPDATE, DELETE |
+
+## User Views and Entities
+| User Role | Entities |
+| --- | --- |
+| Customer | car, car_license, customer_tb, parking_lot_tb, reservation_tb, payment_method_type_tb, payment_method_tb, payment_tb, rating_tb, review_tb, tiers, customer_loyalty_tb, notification_tb |
+| Parking Lot Owner | parking_lot_owner_tb, parking_lot_tb, reservation_tb |
+| Staff | staff_tb, support_tb, customer_tb, reservation_tb |
+
+### User Roles
+- **Customer**: Customers are individuals who use the parking lot reservation system to reserve parking spots. They can create an account, search for available parking lots, make reservations, and provide ratings and reviews of parking lots. Customers can also manage their payment information and receive notifications regarding their reservations.
+- **Parking Lot Owner**: Parking lot owners are individuals who own and manage parking lots. They can view and manage their parking lot information such as capacity, location, and pricing. Parking lot owners can also view reservation details for their parking lots.
+- **Staff**: Staff members are employees who work for the parking lot reservation system. They have access to customer support and can view support messages from customers. Staff members can also manage customer accounts and reservations.
 
 ## CPE 231 Database Systems (2/65)
 ### Car Parking System Midterm Project Report
