@@ -17,7 +17,7 @@ The IZI PARKING Management System is a database project designed to efficiently 
 - CSS
 
 ## Entity Relationship Diagram (ERD)
-!ERD
+![alt text](https://github.com/boss10801/iziparkin/blob/main/IZI_Parking_ERD6.webp?raw=true)
 
 ## Permission Table
 | User Role | Table Column(s) | Permission |
